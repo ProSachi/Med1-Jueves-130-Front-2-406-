@@ -1,0 +1,45 @@
+.site-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.9rem;
+	padding: 1rem 1.25rem;
+	margin: 1.5rem auto;
+	width: min(92%, 980px);
+	border-radius: 999px;
+	background: linear-gradient(135deg, #0f172a, #1e3a8a);
+	box-shadow: 0 16px 40px rgba(15, 23, 42, 0.22);
+}
+
+.site-nav__link {
+	padding: 0.8rem 1.1rem;
+	border-radius: 999px;
+	color: #e2e8f0;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.site-nav__link:hover {
+	background-color: rgba(255, 255, 255, 0.14);
+	color: #ffffff;
+	transform: translateY(-1px);
+}
+
+.site-nav__link.active {
+	background: #f8fafc;
+	color: #0f172a;
+}
+
+@media (max-width: 640px) {
+	.site-nav {
+		border-radius: 24px;
+		padding: 0.9rem;
+	}
+
+	.site-nav__link {
+		width: 100%;
+		text-align: center;
+	}
+}
